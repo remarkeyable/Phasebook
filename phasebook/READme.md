@@ -25,12 +25,12 @@ In the expected result:
   {"id": "6", "name": "Joe Smith", "age": 24, "occupation": "Designer"}
 ]
 ```
-due to the serialization in Flask JSON, the keys are sorted alphabetically. To preserve the desired order, uncomment the following code:
+<p>due to the <a href="https://flask-json.readthedocs.io/en/latest/#creating-json-responses">serialization</a> in Flask JSON, the keys are sorted alphabetically. To preserve the desired order, uncomment the following code:</p>
 
 ```python
 return json.dumps(sorted_results)
 ```
-<h4>Result for json</h4>
+<h4>Result for jsonify</h4>
 <img src="img/json.JPG">
 <h4>Result for json dumps</h4>
 <img src="img/jsondump.JPG">
