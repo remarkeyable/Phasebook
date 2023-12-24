@@ -12,3 +12,26 @@
 
 <img src=img/after.JPG>
 
+<h1>Search</h1>
+
+In the expected result:
+```
+[
+  {"id": "1", "name": "John Doe", "age": 29, "occupation": "Developer"},
+  {"id": "2", "name": "Jane Doe", "age": 30, "occupation": "Engineer"},
+  {"id": "3", "name": "Joe Doe", "age": 25, "occupation": "Designer"},
+  {"id": "4", "name": "John Smith", "age": 28, "occupation": "Architect"},
+  {"id": "5", "name": "Jane Smith", "age": 31, "occupation": "Manager"},
+  {"id": "6", "name": "Joe Smith", "age": 24, "occupation": "Designer"}
+]
+```
+due to the serialization in Flask JSON, the keys are sorted alphabetically. To preserve the desired order, uncomment the following code:
+
+```python
+return json.dumps(sorted_results)
+```
+
+
+
+
+
