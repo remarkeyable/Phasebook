@@ -30,6 +30,11 @@ due to the serialization in Flask JSON, the keys are sorted alphabetically. To p
 ```python
 return json.dumps(sorted_results)
 ```
+<h4>Result for json</h4>
+<img src="img/json.JPG">
+<h4>Result for json dumps</h4>
+<img src="img/jsondump.JPG">
+
 
 
 
