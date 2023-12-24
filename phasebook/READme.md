@@ -12,6 +12,8 @@
 
 <img src=img/after.JPG>
 
+---
+
 <h1>Search</h1>
 
 <p> I understand that this may not be the primary problem here, but I'll provide an explanation of these minor details just in case this information is part of the test.</p>
