@@ -53,11 +53,6 @@ def search_users(args):
 
     results = [dict(i) for i in {tuple(user.items()) for user in results}]
 
-    match_counts = {
-        user["id"]: sum(1 for key in args if key in user and str(user[key]).lower() == args[key].lower())
-        for user in results
-    }
-
     sorted_results = sorted(results, key=lambda user: int(user["id"]))
     return sorted_results
 
